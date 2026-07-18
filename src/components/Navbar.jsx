@@ -21,7 +21,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 glass">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="font-display text-2xl font-bold gradient-text">LUXE</Link>
+          <Link to="/" className="font-display text-2xl font-bold gradient-text tracking-wider">VELORA</Link>
           <div className="hidden md:flex items-center gap-8">
             {links.map((l) => (
               <Link key={l.to} to={l.to} className={'text-sm font-medium transition-colors hover:text-purple-400 ' + (loc.pathname === l.to ? 'text-purple-400' : 'text-gray-300')}>{l.label}</Link>

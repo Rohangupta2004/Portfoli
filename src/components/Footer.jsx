@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2">
-            <Link to="/" className="font-display text-3xl font-bold gradient-text">LUXE</Link>
+            <Link to="/" className="font-display text-3xl font-bold gradient-text tracking-wider">VELORA</Link>
             <p className="mt-4 text-gray-400 max-w-xs leading-relaxed">Premium e-commerce experience. Curated collections for the modern lifestyle.</p>
             <div className="flex gap-4 mt-6">
               {[Github, Twitter, Instagram, Linkedin].map((Icon, i) => (
@@ -33,7 +33,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>2025 LUXE Store. All rights reserved.</p>
+          <p>2025 VELORA. All rights reserved.</p>
           <p>Conceptual portfolio project by Rohan Gupta</p>
         </div>
       </div>

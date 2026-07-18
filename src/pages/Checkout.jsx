@@ -22,7 +22,7 @@ export default function Checkout() {
     setBusy(true)
     const ok = await loadRazorpay()
     if (!ok) { toast.error('Payment gateway failed to load'); setBusy(false); return }
-    const oid = 'LUXE-' + Date.now()
+    const oid = 'VLR-' + Date.now()
     initiatePayment({
       amount: grand, orderId: oid, customerName: form.name, customerEmail: form.email,
       onSuccess: (res) => { dispatch({ type: 'CLEAR' }); nav('/order-success', { state: { orderId: oid, paymentId: res.razorpay_payment_id } }); toast.success('Payment successful!'); setBusy(false) },

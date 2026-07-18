@@ -2,8 +2,8 @@ import { motion } from 'framer-motion'
 import { Star } from 'lucide-react'
 
 const data = [
-  { id: 1, name: 'Priya Sharma', role: 'Fashion Designer', text: 'LUXE has the most curated collection I have found online. The quality is exceptional and the packaging feels like receiving a gift.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100', rating: 5 },
-  { id: 2, name: 'Arjun Mehta', role: 'Tech Entrepreneur', text: 'From sleek gadgets to premium accessories, everything on LUXE screams quality. My go-to for thoughtful gifts.', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100', rating: 5 },
+  { id: 1, name: 'Priya Sharma', role: 'Fashion Designer', text: 'VELORA has the most curated collection I have found online. The quality is exceptional and the packaging feels like receiving a gift.', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100', rating: 5 },
+  { id: 2, name: 'Arjun Mehta', role: 'Tech Entrepreneur', text: 'From sleek gadgets to premium accessories, everything on VELORA screams quality. My go-to for thoughtful gifts.', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100', rating: 5 },
   { id: 3, name: 'Ananya Reddy', role: 'Interior Stylist', text: 'The home collection transformed my apartment. Each piece is minimal yet impactful. Customer service is equally stellar.', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100', rating: 5 },
 ]
 

@@ -1,4 +1,4 @@
-const words = ['LUXE', 'PREMIUM', 'CRAFTED', 'MINIMAL', 'EXCLUSIVE', 'AUTHENTIC', 'CURATED', 'ARTISAN']
+const words = ['VELORA', 'PREMIUM', 'CRAFTED', 'MINIMAL', 'EXCLUSIVE', 'AUTHENTIC', 'CURATED', 'ARTISAN']
 
 export default function Marquee() {
   return (

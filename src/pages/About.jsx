@@ -16,7 +16,7 @@ export default function About() {
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="text-5xl sm:text-6xl font-display font-bold leading-tight">We Build <span className="gradient-text">Experiences</span><br />Not Just Stores</h1>
-            <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">LUXE was born from a simple idea \u2014 online shopping should feel as premium as the products you buy. We combine artisan curation with modern technology to create an e-commerce experience that sets new standards.</p>
+            <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">VELORA was born from a simple idea \u2014 online shopping should feel as premium as the products you buy. We combine artisan curation with modern technology to create an e-commerce experience that sets new standards.</p>
           </motion.div>
         </div>
       </section>
@@ -28,8 +28,8 @@ export default function About() {
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-display font-bold mb-6">Our <span className="gradient-text">Story</span></h2>
             <div className="space-y-4 text-gray-400 leading-relaxed">
-              <p>Founded in 2024, LUXE started as a passion project to reimagine online retail. We noticed most e-commerce platforms prioritised volume over experience, leaving customers scrolling through endless mediocre options.</p>
-              <p>We took a different approach. Every product on LUXE is handpicked by our team of curators \u2014 designers, technologists, and lifestyle enthusiasts who believe the things you own should spark joy.</p>
+              <p>Founded in 2024, VELORA started as a passion project to reimagine online retail. We noticed most e-commerce platforms prioritised volume over experience, leaving customers scrolling through endless mediocre options.</p>
+              <p>We took a different approach. Every product on VELORA is handpicked by our team of curators \u2014 designers, technologists, and lifestyle enthusiasts who believe the things you own should spark joy.</p>
               <p>Today, we serve over 50,000 customers across India, delivering not just products but a carefully crafted experience from discovery to doorstep.</p>
             </div>
           </motion.div>

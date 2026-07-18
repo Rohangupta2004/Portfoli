@@ -1,4 +1,4 @@
-# LUXE — Premium E-Commerce Store
+# VELORA — Premium E-Commerce Store
 
 A modern, visually stunning e-commerce web application built as a **conceptual portfolio project**. Features a dark glassmorphism UI, bento grid layouts, smooth Framer Motion animations, Supabase backend, and Razorpay test payment integration.
 

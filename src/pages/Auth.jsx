@@ -29,7 +29,7 @@ export default function Auth() {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="glass rounded-2xl p-8">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-display font-bold">{isLogin ? 'Welcome Back' : 'Create Account'}</h1>
-            <p className="text-gray-400 mt-2">{isLogin ? 'Sign in to your LUXE account' : 'Join the LUXE experience'}</p>
+            <p className="text-gray-400 mt-2">{isLogin ? 'Sign in to your VELORA account' : 'Join the VELORA experience'}</p>
           </div>
           <form onSubmit={submit} className="space-y-4">
             <div className="relative">

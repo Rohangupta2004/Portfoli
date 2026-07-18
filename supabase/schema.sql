@@ -1,4 +1,4 @@
--- LUXE E-Commerce Database Schema
+-- VELORA E-Commerce Database Schema
 create extension if not exists "uuid-ossp";
 
 -- Profiles (extends auth.users)
