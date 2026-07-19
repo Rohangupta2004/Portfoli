@@ -21,38 +21,23 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 glass">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="font-display text-2xl font-bold tracking-widest gradient-text">VELORA</Link>
+          <Link to="/" className="font-display text-2xl font-bold gradient-text tracking-[0.15em]">VELORA</Link>
           <div className="hidden md:flex items-center gap-8">
             {links.map((l) => (
               <Link
                 key={l.to}
                 to={l.to}
-                className="relative text-sm font-medium transition-colors hover:text-purple-400 group"
-                style={{ color: loc.pathname === l.to ? '#c084fc' : '#d1d5db' }}
+                className={'text-sm font-medium transition-colors hover:text-violet-400 ' + (loc.pathname === l.to ? 'text-violet-400' : 'text-gray-300')}
               >
                 {l.label}
-                {loc.pathname === l.to && (
-                  <motion.span
-                    layoutId="nav-underline"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full"
-                    style={{ background: 'linear-gradient(90deg, #a855f7, #ec4899)' }}
-                  />
-                )}
               </Link>
             ))}
           </div>
           <div className="flex items-center gap-4">
-            <Link to={user ? '/checkout' : '/auth'} className="p-2 hover:text-purple-400 transition-colors"><User size={20} /></Link>
-            <button onClick={() => dispatch({ type: 'TOGGLE_CART' })} className="relative p-2 hover:text-purple-400 transition-colors">
+            <Link to={user ? '/checkout' : '/auth'} className="p-2 hover:text-violet-400 transition-colors"><User size={20} /></Link>
+            <button onClick={() => dispatch({ type: 'TOGGLE_CART' })} className="relative p-2 hover:text-violet-400 transition-colors">
               <ShoppingBag size={20} />
-              {count > 0 && (
-                <motion.span
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  className="absolute -top-1 -right-1 w-5 h-5 text-white text-xs rounded-full flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg, #a855f7, #ec4899)' }}
-                >{count}</motion.span>
-              )}
+              {count > 0 && <span className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white text-xs rounded-full flex items-center justify-center font-bold">{count}</span>}
             </button>
             <button className="md:hidden p-2" onClick={() => setOpen(!open)}>{open ? <X size={20} /> : <Menu size={20} />}</button>
           </div>
@@ -63,7 +48,7 @@ export default function Navbar() {
           <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="md:hidden glass-strong">
             <div className="px-4 py-4 space-y-3">
               {links.map((l) => (
-                <Link key={l.to} to={l.to} onClick={() => setOpen(false)} className="block text-gray-300 hover:text-purple-400">{l.label}</Link>
+                <Link key={l.to} to={l.to} onClick={() => setOpen(false)} className="block text-gray-300 hover:text-violet-400">{l.label}</Link>
               ))}
             </div>
           </motion.div>
