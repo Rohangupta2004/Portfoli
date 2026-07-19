@@ -20,12 +20,10 @@
     @apply bg-white/10 backdrop-blur-2xl border border-white/20;
   }
   .gradient-text {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, #a855f7 0%, #ec4899 40%, #f97316 70%, #eab308 100%);
-  }
-  .gradient-text-subtle {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(90deg, #c084fc, #f472b6);
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   .gradient-border {
     position: relative;
@@ -34,22 +32,37 @@
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: inherit;
     padding: 1px;
+    border-radius: inherit;
     background: linear-gradient(135deg, #a855f7, #ec4899, #f97316);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
   }
-  .shimmer {
-    background: linear-gradient(110deg, transparent 25%, rgba(255,255,255,0.05) 37%, transparent 63%);
-    background-size: 200% 100%;
-    animation: shimmer 2s ease-in-out infinite;
+  .glow-purple {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.3), 0 0 60px rgba(168, 85, 247, 0.1);
+  }
+  .glow-pink {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.3), 0 0 60px rgba(236, 72, 153, 0.1);
+  }
+  .text-gradient-hover {
+    @apply transition-all duration-300;
+  }
+  .text-gradient-hover:hover {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
 }
